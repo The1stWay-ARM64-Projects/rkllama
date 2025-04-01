@@ -13,6 +13,6 @@ RUN chmod +x setup.sh && ./setup.sh --no-conda
 
 EXPOSE 8080
 
-#CMD ["/usr/local/bin/rkllama", "serve", "port"] if you want to change the port.
-#example: CMD ["/usr/local/bin/rkllama", "serve", "3000"]
-CMD ["/usr/local/bin/rkllama", "serve"]
+#CMD ["/usr/local/bin/rkllama", "serve", "--no-conda", "port"] if you want to change the port.
+#example: CMD ["/usr/local/bin/rkllama", "serve", "--no-conda", "3000"]
+CMD ["/usr/local/bin/rkllama", "serve", "--no-conda"]
